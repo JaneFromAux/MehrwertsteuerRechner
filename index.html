@@ -10,15 +10,43 @@
 </head>
 
 <body>
-    <form action="">
-        <label for="bruttoNetto">Was soll berechnet werden?</label>
-        <input type="radio" value="Mehrwertsteuer aufschlagen (Netto zu Brutto)" name="bruttoNetto" id="aufschlag">
-        <input type="radio" value="Mehrwertsteuer abziehen (Brutto zu Netto)" name="bruttoNetto" id="abzug">
-        <label for="steuersatz">Mehrwertsteuersatz</label>
-        <input type="radio" value="19%" name="steuersatz" id="steuer19">
-        <input type="radio" value="7%" name="steuersatz" id="steuer7">
-        <input type="button" value="Berechnen" onclick="berechnen()">
-    </form>
+    <article>
+        <form action="">
+            <div>
+                <h3>Was soll berechnet werden?</h3>
+                <label for="aufschlag" name="bruttoNetto">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                <input type="radio" name="bruttoNetto" id="aufschlag">
+                <label for="abzug" name="bruttoNetto">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+                <input type="radio" name="bruttoNetto" id="abzug">
+            </div>
+            <div>
+                <h3>Mehrwertsteuersatz</h3>
+                <input type="radio" name="satz" id="neunZehn">
+                <label for="19" name="satz">19%</label>
+                <input type="radio" name="satz" id="siebZehn">
+                <label for="7" name="satz">7%</label>
+            </div>
+            <div>
+                <label for="euro">Nettobetrag(Preis ohne Mehrwertsteuer)</label>
+                <input type="number" id="euro">
+            </div>
+            <div>
+                <input type="button" value="berechnen" onclick="berechnen()" class="btn">
+            </div>
+            </div>
+        </form>
+        <section>
+            <h4>Ergebnis</h4>
+            <div>
+                <h3>Mehrwertsteuerbetrag</h3>
+                <h3 id="outputMwst"></h3>
+            </div>
+            <div>
+                <h3>Bruttobetrag (Endpreis)</h3>
+                <h3 id="outputEndpreis"></h3>
+            </div>
+        </section>
+    </article>
 
     <script src="assets/js/main.js"></script>
 </body>

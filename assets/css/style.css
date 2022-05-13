@@ -1,0 +1,51 @@
+article {
+    height: 85vh;
+    width: 28vw;
+    margin: auto;
+    border: 1px solid blue;
+    border-radius: 15px;
+}
+
+div {
+    background-color: aliceblue;
+    padding: 1vh 2vw;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+div:nth-of-type(3) {
+    height: 8vh;
+
+}
+
+div:nth-of-type(4) {
+    height: 8vh;
+    background-color: white;
+}
+
+section {
+    margin-top: 11vh;
+}
+
+h4 {
+    color: blue;
+    padding-left: 2vw;
+}
+
+
+
+#euro {
+    display: block;
+    margin-top: 3vh;
+}
+
+.btn {
+    display: block;
+    padding: 2vh 22%;
+    margin: 5vh auto;
+    color: white;
+    background-color: blue;
+    border: none;
+    font-size: 2.5rem;
+    border-radius: 8px;
+}
